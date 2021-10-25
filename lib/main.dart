@@ -73,15 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Colors.black,
           title: Text(
             S.of(context).app_bar_title,
-            style: const TextStyle(
-                color: Colors.white),
+            style: const TextStyle(color: Colors.white),
           ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () => setState(() {
             _clickCount++;
           }),
-          backgroundColor:Colors.white,
+          backgroundColor: Colors.white,
         ),
         body: Container(
           child: Center(
