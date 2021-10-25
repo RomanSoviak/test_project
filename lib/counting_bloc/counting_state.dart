@@ -1,3 +1,3 @@
 class BlocAState {}
 
-class IncrementState extends BlocAState {}
+class CounterInitial extends BlocAState {}
