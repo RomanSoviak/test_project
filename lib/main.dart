@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:text_2_0/theme.dart';
+import 'package:test_project/theme.dart';
 
 import 'generated/l10n.dart';
 
