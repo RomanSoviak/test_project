@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:test_project/counting_bloc/counting_bloc.dart';
+import 'package:test_project/counting_bloc/counting_state.dart';
 import 'package:test_project/theme.dart';
 
 import 'generated/l10n.dart';
@@ -31,7 +33,10 @@ class MyApp extends StatelessWidget {
         ],
         supportedLocales: S.delegate.supportedLocales,
         title: 'Flutter Demo',
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: BlocProvider(
+          create: (_) => BlocA(),
+          child: const MyHomePage(title: 'Flutter Demo Home Page'),
+        ),
       ),
     );
   }
