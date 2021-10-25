@@ -56,19 +56,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    BlocBuilder<Bloc, BlocAState>(
-        builder: (context, state) {
-          TextButton(
-            style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-            ),
-            onPressed: () { },
-            child: const Text('TextButton'),
-          );
-
-
-        },// return widget here based on BlocA's state
+    return BlocBuilder<BlocA, BlocAState>(
+      builder: (context, state) => TextButton(
+        style: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+        ),
+        onPressed: () {},
+        child: const Text('TextButton'),
+      ),
     );
+
     return Scaffold(
         backgroundColor: Colors.grey,
         appBar: AppBar(
