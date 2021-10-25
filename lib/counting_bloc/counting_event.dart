@@ -1,0 +1,4 @@
+
+class BlocAEvent {
+//тут івенти
+}
